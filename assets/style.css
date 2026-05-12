@@ -102,11 +102,76 @@ header .menu-icon div {
     background-color: white;
 }
 
+/* HERO */
+.hero .container {
+    display: flex;
+}
+
+.hero.leftside,
+.hero .rigthside {
+    flex: 1;
+}
+
+.her .leftside {
+    padding-bottom: 150px;
+}
+.hero .rigthside {
+    text-align: center;
+}
+.hero .rigthside img {
+    width: auto;
+    height: 600px;
+}
+
+.hero h1 {
+    font-family: 'Calistoga';
+    font-size: 72px;
+    line-height: 74px;
+    margin-top: 50px;
+}
+.hero p {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 40px 0;
+}
+
+.hero .button {
+    display: inline-block;
+    background-color: #FE6A0F;
+    font-weight: 500;
+    color: white;
+    padding: 15px 80px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero .button:hover {
+    opacity: 0.8;
+}
+
 @media (max-width: 820px) {
     header nav {
         display: none;
     }
     header .menu {
         display: flex;
+    }
+
+    .hero .container {
+        flex-direction: column;
+    }
+    .hero .leftside {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .hero .rigthside {
+        padding-bottom: 50px;
+    }
+    .hero .rigthside img {
+        height: 300px;
+    }
+    .hero h1 {
+        font-size: 44px;
+        line-height: 50px;
     }
 }
