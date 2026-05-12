@@ -21,3 +21,92 @@ body {
     max-width: 1200px;
     padding: 0 20px;
 }
+
+.logo a {
+    font-family: 'Calistoga';
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+}
+
+.logo a span {
+    color: #FE6A0F;
+}
+
+/* HEADER */
+
+header .container {
+    display: flex;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    gap: 50px;
+}
+
+header nav {
+    flex: 1;
+    align-items: center;
+    display: flex;
+}
+
+header nav .leftside {
+    display: flex;
+    flex: 1;
+}
+
+header nav li {
+    margin: 0 30px;
+}
+
+header nav li a {
+    color: #FFF;
+    text-decoration: none;
+
+}
+
+header nav li a:hover {
+    color: #999;
+}
+
+header nav .button {
+    color: white;
+    display: block;
+    border: 1px solid white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header nav .button:hover {
+    color: #999;
+    border-color: #999;
+}
+
+header .menu {
+    display: none;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+header .menu-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+header .menu-icon div {
+    height: 6px;
+    background-color: white;
+}
+
+@media (max-width: 820px) {
+    header nav {
+        display: none;
+    }
+    header .menu {
+        display: flex;
+    }
+}
